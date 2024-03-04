@@ -43,15 +43,6 @@
     displayChoices();
   }
 
-
-  //   function displayUserChoice() {
-  //     document.getElementById('selection').style.display = 'block';
-  //     const userSelectButton = document.getElementById('user_select');
-  //     userSelectButton.querySelector('img').src = `/images/icons-${choices}-64 1.png`;
-  //     userSelectButton.querySelector('img').alt = `${userChoice} icon`;
-
-  // }
-
   function displayUserChoice() {
     document.getElementById('selection').style.display = 'block';
     const userSelectButton = document.getElementById('user_select');
@@ -64,11 +55,6 @@
       case 'rock':
         userSelectButton.querySelector('img').src = '/images/icon-rock.png';
         userSelectButton.querySelector('img').alt = 'rock';
-        // userSelectButton.style.backgroundColor = 'lightgray';
-        // userSelectButton.style.border = '2px solid darkgray';
-        // userSelectButton.style.border-radius = '2px solid darkgray';
-        // userSelectButton.style.border-radius ='20px';
-        // userSelectButton.classList.add('btn-rock');
         userSelectButton.classList.add('btn-rock');
         break;
       case 'paper':
@@ -122,13 +108,6 @@
         break;
     }
   }
-
-  // function displayComputerChoice() {
-  //     document.getElementById('selection').style.display = 'block';
-  //     const computerSelectButton = document.getElementById('computer_select');
-  //     computerSelectButton.querySelector('img').src = `/images/icons8-${computerChoice}.png`;
-  //     computerSelectButton.querySelector('img').alt = `${computerChoice} icon`;
-  // }
 
   function updateScore() {
     document.getElementById('userScore').innerText = `${userScore}`;
